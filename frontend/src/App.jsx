@@ -4,6 +4,8 @@ import SummaryCard from './components/SummaryCard'
 import TrendsChart from './components/TrendsChart'
 import DataTable from './components/DataTable'
 import axios from 'axios'
+import { API_URL } from "./config";
+const res = await axios.post(API_URL, { query });
 
 export default function App(){
   const [summary,setSummary] = useState(null)
